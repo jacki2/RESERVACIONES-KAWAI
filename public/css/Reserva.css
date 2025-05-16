@@ -1,0 +1,153 @@
+/* Estilos del menú */
+.seccion-menu {
+    display: none;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.stripe-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+}
+
+.StripeElement {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.btn-pagar {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.btn-pagar:hover {
+    background: #45a049;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.boton-menu {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-menu:hover {
+    background-color: #0056b3;
+}
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-close {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .boton-menu {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .seccion-menu {
+        padding: 10px;
+    }
+}
+
+/* Alertas */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+.form-step {
+    display: none;
+}
+.form-step.active {
+    display: block;
+}
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.step {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.step.active {
+    background: #007bff;
+    color: white;
+}
+.seccion-menu label::after {
+    content: " *";
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.seccion-menu small {
+    display: block;
+    color: #666;
+    font-size: 0.8em;
+    margin: 0.5em 0;
+}
